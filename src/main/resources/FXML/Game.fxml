@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GameController">
+   <children>
+      <Pane id="basepane" blendMode="SRC_ATOP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" style="-fx-background-image: url('/cards/ownbackground.png');">
+         <children>
+            <Button id="clickbutton" fx:id="cb" alignment="CENTER" layoutX="22.0" layoutY="14.0" mnemonicParsing="false" onAction="#clicked" text="Set Name" />
+            <GridPane layoutX="84.0" layoutY="84.0" prefHeight="658.0" prefWidth="1249.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView fx:id="card0" fitHeight="150.0" fitWidth="200.0" nodeOrientation="INHERIT" onMouseClicked="#pclick" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="card1" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#pclick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" />
+                  <ImageView fx:id="card2" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#pclick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" />
+                  <ImageView fx:id="card3" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#pclick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" />
+                  <ImageView fx:id="card4" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#pclick" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1" />
+                  <ImageView fx:id="card5" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#pclick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <ImageView fx:id="card6" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#pclick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <ImageView fx:id="card7" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#pclick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <ImageView fx:id="card8" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#pclick" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2" />
+                  <ImageView fx:id="card9" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#pclick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <ImageView fx:id="card10" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#pclick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <ImageView fx:id="card11" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#pclick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <ImageView fx:id="card12" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#pclick" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="3" />
+                  <ImageView fx:id="card13" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#pclick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <ImageView fx:id="card14" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#pclick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <ImageView fx:id="card15" fitHeight="150.0" fitWidth="330.0" onMouseClicked="#pclick" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+            <TextField fx:id="namebox" layoutX="165.0" layoutY="14.0" promptText="Name"/>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

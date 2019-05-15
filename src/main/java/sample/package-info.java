@@ -1,0 +1,4 @@
+/**
+ * Alkalmazás indítókódjai.
+ */
+package sample;
